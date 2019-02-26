@@ -1,0 +1,5 @@
+# built py script
+*.DS_Store
+*.idea
+*.iml
+*venv
