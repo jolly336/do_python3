@@ -19,7 +19,7 @@
 
 ## Usage
 
-You can use Pycharm tool to import this java source code.
+You can use Pycharm tool to import this source code.
 
 ## Thanks
 
