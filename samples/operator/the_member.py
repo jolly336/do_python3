@@ -15,7 +15,7 @@ print(b not in [1, 2, 3, 4, 5])
 b = 'h'
 print(b in 'hello')
 
-# 字典成员运算符 key:value 根据key来做判断
+# 字典成员运算符 key:value 根据 key 来做判断
 b = 'a'
 print(b in {'c': 1})
 b = 1

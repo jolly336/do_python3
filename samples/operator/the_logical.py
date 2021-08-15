@@ -7,26 +7,25 @@
 # @Site    : nelsonblog.me
 
 # and 且（与）
-print(True and True)
-print(True and False)
+print(True and True)  # True
+print(True and False)  # False
 
 # or 或
-print(False or True)
+print(False or True)  # True
 
 # not 非
-print(not False)
-print(not True)
+print(not False)  # True
+print(not True)  # False
 
-print(not not True)
+print(not not True)  # True
 
 print(1 and 1)  # 1
 print('a' and 'b')  # 'b'
 print(not 'a')  # False
 
-print(not 1)
-print([1] or [])
-print([] or [1])
+print(not 1)  # False
+print([1] or [])  # [1]
+print([] or [1])  # [1]
 
-print(1 or 0)
-print(0 or 1)
-
+print(1 or 0)  # 1
+print(0 or 1)  # 1

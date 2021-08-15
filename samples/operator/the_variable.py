@@ -18,7 +18,7 @@ print(A * 3 + B + A)
 
 type = 3  # 不建议使用系统保留关键字！！！
 print(type)
-# print(type(1))  # TypeError: 'int' object is not callable
+# print(type(1))  # 由于上面定义了 type 变量，这里使用 type() 函数就会报错！TypeError: 'int' object is not callable
 
 a = 1
 b = a
@@ -31,6 +31,7 @@ a[0] = '1'
 print(b)  # ['1', 2, 3, 4]
 
 # str 不可变? a + 'python' 生成了一个新的变量
+# id() 求变量内存地址
 a = 'hello'
 print(id(a))
 a = a + 'python'
