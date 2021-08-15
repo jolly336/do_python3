@@ -18,4 +18,5 @@ while counter <= 10:
     counter += 1
     print(counter)
 else:
+    # 当 while 遍历结束完执行 else 语句块
     print("EOF")

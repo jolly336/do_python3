@@ -37,14 +37,20 @@ else:
 for x in range(0, 10, 2):
     print(x, end=' | ')
 
+print('\n')
+
 # 递减等差数列
 for x in range(10, 0, -2):
     print(x, end=' | ')
+
+print('\n')
 
 # 5. 打印出相间隔数字
 a = [1, 2, 3, 4, 5, 6, 7, 8]
 for i in range(0, len(a), 2):
     print(a[i], end=' | ')
+
+print('\n')
 
 # 比for循环更好的，切片!!!
 b = a[0:len(a):2]

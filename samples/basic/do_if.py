@@ -15,8 +15,11 @@
 mood = True
 
 # 1.if-else
-# Python不能混淆、压缩
-# 云服务，商业授权（桌面应用程序）
+# Python 不能混淆、压缩
+# 云服务，自己的服务器，代码托管在自己的服务器上，压缩和加密显得不那么重要！
+# 商业授权（桌面应用程序）桌面应用需要加密，不然别人能看到代码！
+
+# if 不止是变量，还可以表达式
 if mood:
     print('go to left')
     # print('back away')
@@ -36,7 +39,7 @@ user_account = input()
 print('please input password')
 user_password = input()
 
-if ACCOUNT == user_account and ACCOUNT == user_password:
+if ACCOUNT == user_account and PASSWORD == user_password:
     print('success')
 else:
     print('fail')
@@ -51,7 +54,7 @@ if True:
 # 5.if-elif-else
 
 a = input()
-# 输入1，表明a接受到的是字符串，动态语言没有具体类型
+# 输入1，表明 a 接受到的是字符串，动态语言没有具体类型
 print(type(a))  # <class 'str'>
 a = int(a)
 if a == 1:
