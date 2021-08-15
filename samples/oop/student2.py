@@ -15,6 +15,12 @@
 
 # 类：首字母大写，驼峰式命名
 # 类是个模块，可以生成各种不同对象
+
+"""
+内容：类变量和实例变量
+
+思考：为什么要有类变量？？？
+"""
 class Student():
     # 一个班级里所有学生的总数
     sum = 0
@@ -35,6 +41,6 @@ class Student():
 student1 = Student('Nelson', 18)
 student2 = Student('Jolly', 18)
 # 对象name和类name
-print(student1.name)
-print(student2.name)
-print(Student.name)
+print(student1.name)  # 实例变量
+print(student2.name)  # 实例变量
+print(Student.name)  # 类变量
