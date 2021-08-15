@@ -76,10 +76,10 @@ print("hello world"[6: 20])  # world
 print("hello world"[6: 0])  # ''
 # 步长为空，即截取后面所有字符
 print("hello world"[6:])  # world
-print("python java android php ruby"[6:]) #  java android php ruby
-print("python java android php ruby"[: -4]) # python java android php
+print("python java android php ruby"[6:])  # java android php ruby
+print("python java android php ruby"[: -4])  # python java android php
 # 负数在前面的意义：从字符串末尾开始数几个字符
-print("python java android php ruby"[-4:]) # ruby
+print("python java android php ruby"[-4:])  # ruby
 
 # 原始字符串
 print(r'c:\windows')

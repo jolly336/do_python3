@@ -8,44 +8,42 @@
 
 
 # 二进制
-print(0b10)
-print(0b11)
+print(0b10)  # 2
+print(0b11)  # 3
 
 # 八进制
-print(0o10)
-print(0o11)
+print(0o10)  # 8
+print(0o11)  # 9
 
 # 十六进制
-print(0x10)
-print(0x1F)
+print(0x10)  # 16
+print(0x1F)  # 31
 
 # 进制转换
 
 # 十进制 -> 二进制
-print(bin(10))
+print(bin(10))  # 0b1010
 
 # 八进制 -> 二进制
-print(bin(0o7))
+print(bin(0o7))  # 0b111
 
 # 十六进制 -> 二进制
-print(bin(0xE))
-
+print(bin(0xE))  # 0b1110
 
 # 二进制 -> 十进制
-print(int(0b111))
+print(int(0b111))  # 7
 
 # 八进制 -> 十进制
-print(int(0o77))
+print(int(0o77))  # 63
 
 # 十进制 -> 十六进制
-print(hex(888))
+print(hex(888))  # 0x378
 
 # 八进制 -> 十六进制
-print(hex(0o7777))
-
+print(hex(0o7777))  # 0xfff
 
 # 二进制 -> 八进制
-print(oct(0b111))
+print(oct(0b111))  # 0o7
 
 # 十六进制 -> 八进制
-print(oct(0x777))
+print(oct(0x777))  # 0o3567

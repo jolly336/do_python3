@@ -6,38 +6,34 @@
 # @Contact : haoxunwang525@gmail.com
 # @Site    : nelsonblog.me
 
-print(True)
+print(True)  # True
+print(False)  # False
 
-print(False)
+print(type(True))  # <class 'bool'>
 
-print(type(True))
+print(int(True))  # 1
+print(int(False))  # 0
 
-print(int(True))
-print(int(False))
+# python 中 bool 类型属于数字 Number 下的一种
+print(bool(1))  # True
+print(bool(0))  # False
 
-# python中bool类型属于数字Number下的一种
-print(bool(1))
-print(bool(0))
-
-
-print(bool(2))
-print(bool(2.2))
-print(bool(-1.1))
-print(bool(0b01))
-print(bool(0b0))
+print(bool(2))  # True
+print(bool(2.2))  # True
+print(bool(-1.1))  # True
+print(bool(0b01))  # True
+print(bool(0b0))  # False
 
 # 其它类型可以和bool来转换
-
-print(bool('abc'))
-print(bool(''))
+print(bool('abc'))  # True
+print(bool(''))  # False
 
 # 列表
-print(bool([1, 2, 3]))
-print(bool([]))
+print(bool([1, 2, 3]))  # True
+print(bool([]))  # False
 
-# 在Python中一系列空值会被认为是false
-print(bool({1, 1, 1}))
-print(bool({}))
+# 在 Python 中一系列空值会被认为是 false
+print(bool({1, 1, 1}))  # True
+print(bool({}))  # False
 
-print(bool(None))
-
+print(bool(None))  # False
