@@ -8,7 +8,7 @@
 * 二、「组」的概念及定义 group
 * 三、变量与运算符 operator
 * 四、分支、循环、条件与枚举 basic
-* 五、Python项目的组织结构
+* 五、Python项目的组织结构 packages
 * 六、函数 function
 * 七、面向对象 oop
 * 八、正则表达式与JSON regex & json_basic
