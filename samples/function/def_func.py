@@ -23,11 +23,11 @@ def add(x, y):
 
 
 def print_code(code):
-    # print函数没有返回值，结果为None
+    # print函数没有返回值，结果为 None
     print(code)
 
 
-# Python解释性语言，递归栈深为995次
+# Python 解释性语言，递归栈深为 995 次
 a = add(1, 2)
 b = print_code('Python')
 print(a, b)
