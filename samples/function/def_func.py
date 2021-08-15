@@ -13,7 +13,7 @@ def funcname(parameter_list):
 '''
 
 
-# 设置最大递归次数
+# 设置最大递归次数来更改系统最大次数，但即使你设置了，也达不到 1百万次，各个系统不一样，大概在 3000多次？
 # import sys
 # sys.setrecursionlimit(1000000)
 
@@ -23,6 +23,7 @@ def add(x, y):
 
 
 def print_code(code):
+    # print_code(code) # 递归超次数了，995次，[Previous line repeated 995 more times]  RecursionError: maximum recursion depth exceeded
     # print函数没有返回值，结果为 None
     print(code)
 

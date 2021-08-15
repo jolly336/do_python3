@@ -10,4 +10,4 @@ a = 1.12386
 result = round(a, 2)
 print(result)
 
-# 查看内置函数 help(round)，查看Python之禅，import this
+# 查看内置函数 help(round)，查看Python之禅，在命令行下敲入 import this 就可以看到了：
