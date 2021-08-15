@@ -38,14 +38,11 @@ print(len("hello world"))
 # max
 print(max([1, 2, 3, 4, 5, 6]))
 # 设计字符编码 ASCII
-print(max('hello world')) # w
+print(max('hello world'))  # w
 # ord 查看ASCII码
 print(ord('w'))
 print(ord(' '))
 
 # min
 print(min([1, 2, 3, 4, 5, 6]))
-print(min('hello world')) # ' '
-
-
-
+print(min('hello world'))  # ' '

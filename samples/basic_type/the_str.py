@@ -84,3 +84,63 @@ print("python java android php ruby"[-4:])  # ruby
 # 原始字符串
 print(r'c:\windows')
 print(R'c:\windows')
+
+# 字符串操作
+# 字符串拼接
+r = 'hello' + 'world'
+print('字符串拼接结果为', r)  # 输出：字符串拼接结果为 helloworld
+
+# 字符串截取
+x = 'hello,world'
+r = x[0:4]
+print('从索引 0 到 4 截取字符串，结果为', r)  # 输出：从索引 0 到 4 截取字符串，结果为 hell
+
+# 字符串格式化
+r = 'hello,%s' % 'world'  # 替换一个数据
+print('字符串格式化结果为', r)  # 输出：字符串格式化结果为 hello,world
+r = 'hello,%s! hello,%s!' % ('world', 'python')  # 替换多个数据
+print('字符串格式化结果为', r)  # 输出：字符串格式化结果为 hello,world! hello,python!
+
+# 获取字符串长度
+x = 'hello,world'
+r = len(x)
+print('字符串长度为', r)  # 输出：字符串长度为 11
+
+# 去除字符串两端空格
+r = '  hello,world  '.strip()
+print('去除两端空格的结果为', r)  # 输出：去除两端空格的结果为 hello,world
+
+# 根据分隔符分割字符串
+x = 'hello,world'
+r = x.split(',')
+print('根据逗号分割字符串，结果为', r)  # 输出：根据逗号分割字符串，结果为 ['hello', 'world']
+
+# 在字符串中查找某一字符串
+x = 'hello,world'
+r = x.find('ello')
+print('字符串中查找 ello，结果为', r)  # 输出：字符串中查找 ello，结果为 1
+
+# 判断字符串是否以某一字符串开头
+x = 'hello,world'
+r = x.startswith('hello')
+print('判断字符串是否以 hello 开头，结果为', r)  # 输出：判断字符串是否以 hello 开头，结果为 True
+
+# 判断字符串是否以某一字符串结尾
+x = 'hello,world'
+r = x.endswith('world')
+print('判断字符串是否以 world 结尾，结果为', r)  # 输出：判断字符串是否以 world 结尾，结果为 True
+
+# 大写字母转小写
+x = 'HELLO,world'
+r = x.lower()
+print('大写字母转小写，结果为', r)  # 输出：大写字母转小写，结果为 hello,world
+
+# 小写字母转大写
+x = 'HELLO,world'
+r = x.upper()
+print('小写字母转大写，结果为', r)  # 输出：小写字母转大写，结果为 HELLO,WORLD
+
+# 字符串替换
+x = 'hello,world'
+r = x.replace('hello', 'hi')
+print('字符串替换后，结果为', r)  # 输出：字符串替换后，结果为 hi,world
