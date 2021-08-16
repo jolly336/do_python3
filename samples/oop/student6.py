@@ -15,11 +15,21 @@
 
 # 类：首字母大写，驼峰式命名
 # 类是个模块，可以生成各种不同对象
+
+"""
+类方法
+
+* 如何写类方法？
+* 如何调用类方法？
+"""
+
+
 class Student():
     # 学生数量
     sum = 0
 
     # 构造函数
+    # 思考：类变量和示例变量的区别？
     def __init__(self, name, age):
         self.name = name
         self.age = age
@@ -28,6 +38,8 @@ class Student():
         print(self.__class__.sum)
 
     def do_homework(self):
+        # self.__class__.sum += 1
+        # print('当前班级学生总数为：' + str(self.__class__.sum))
         print('homework')
 
 

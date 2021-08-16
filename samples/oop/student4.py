@@ -18,7 +18,11 @@
 
 """
 self与实例方法
+
+* 定义实例方法时，self 必须出现
+* 调用实例方法时，不需要传入对 self 传参
 """
+
 
 class Student():
     # 学生数量
@@ -30,12 +34,17 @@ class Student():
     def __init__(self, name, age):
         self.name = name
         self.age = age
-        print(name)
-        print(age)
+        # self 类似 java 的 this?
+        # self 为啥要写出来，猜测可能 Python 是为了 显胜于隐~
+        # self 代表的是实例，不是类！
+        # print(name)  # 不建议这种访问，要访问实例变量 name 最好加上 self.name
+        # print(age)
+        print(self.name)  # 建议写法，防止形参改了，不加 self 出错~
+        print(self.age)
 
     def do_homework(self):
         print('homework')
 
 
 student = Student('Nelson', 18)
-print(student.__dict__)
+print(student.__dict__)  # __dict__ 显示实例下的所有成员变量
