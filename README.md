@@ -19,7 +19,18 @@
 
 ## Usage
 
-You can use Pycharm tool to import this source code.
+You can use [PyCharm tool](https://www.jetbrains.com/pycharm/) or [Visual Studio Code](https://code.visualstudio.com/) to import and run this source code.
+
+PyCharm Needed interpreter:
+
+* brew install python3
+
+VSCode Needed Extensions:
+
+* Python
+* Terminal
+* vscode-icons
+* vim
 
 ## Thanks
 
