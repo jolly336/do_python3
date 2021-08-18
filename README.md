@@ -1,6 +1,6 @@
 # do_python3
 
-> This is a basic exercise sample project for learning Python3.
+> Python3 入门与进阶学习示例代码 This is a basic exercise sample project for learning Python3.
 
 ## Table of Contents
 
