@@ -8,13 +8,21 @@
 
 import json
 
+"""
+反序列化
+
+JSON array -> list 列表
+"""
+
 # JSON object array
 # w3c 规定的，key要使用字符串，双引号
 json_str = '[{"name": "qiyue", "age":18, "flag":false},{"name": "qiyue", "age":18}]'
 
 # json_basic -> dict
-# loads 把json转换为Python特定数据结构
+# loads 把 json 转换为 Python 特定数据结构
 student = json.loads(json_str)
+
 # <class 'list'>
 print(type(student))
-print(student)
+# [{'name': 'qiyue', 'age': 18, 'flag': False}, {'name': 'qiyue', 'age': 18}]
+print(student)  # json 字符串中的 false 被转化成了 Python 的 False
