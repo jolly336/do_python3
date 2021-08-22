@@ -6,6 +6,10 @@
 # @Contact : haoxunwang525@gmail.com
 # @Site    : nelsonblog.me
 
+"""
+
+"""
+
 # filter
 # 返回值为True or False
 list_x = [1, 0, 1, 0, 0, 1]

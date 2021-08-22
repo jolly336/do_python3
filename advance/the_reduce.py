@@ -6,6 +6,10 @@
 # @Contact : haoxunwang525@gmail.com
 # @Site    : nelsonblog.me
 
+"""
+
+"""
+
 from functools import reduce
 
 # reduce是个函数
