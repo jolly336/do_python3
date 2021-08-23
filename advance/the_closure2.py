@@ -57,7 +57,7 @@ def f1():
 f = f1()
 # <function f1.<locals>.f2 at 0x102a4d6a8>
 print(f)
-print(f.__closure__)  # None 为什么？没有闭包属性？？？
+print(f.__closure__)  # None 为什么？没有闭包属性？？？答案：不是闭包！！！
 
 
 # 3 去掉 a 内部赋值，再次验证下闭包？
