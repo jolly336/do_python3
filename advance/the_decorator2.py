@@ -7,6 +7,9 @@
 # @Site    : nelsonblog.me
 
 """
+装饰器二
+
+定义嵌套函数
 
 """
 
@@ -20,6 +23,7 @@ import time
 
 # 嵌套函数定义
 # 装饰
+# 和普通函数没啥区别，只是多了嵌套内部函数
 def decorator(func):
     def wrapper():
         print(time.time())
@@ -32,6 +36,7 @@ def decorator(func):
 def f1():
     print('This is a function')
 
-# 很难用
+
+# 手动调用，很难用，定义函数和业务函数没有体现出来关联性，f1 函数一个独立的函数
 f = decorator(f1)
 f()

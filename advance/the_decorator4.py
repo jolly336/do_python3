@@ -7,6 +7,9 @@
 # @Site    : nelsonblog.me
 
 """
+装饰器四
+
+装饰器支持函数传递参数，支持不同参数
 
 """
 
@@ -43,7 +46,7 @@ import time
 # f1('test func')
 
 
-# 2. 可变参数实现
+# 2. 使用 Python 可变参数实现
 def decorator(func):
     def wrapper(*args):
         print(time.time())

@@ -7,6 +7,7 @@
 # @Site    : nelsonblog.me
 
 """
+装饰器六
 
 """
 
@@ -15,6 +16,7 @@
 
 # 1. 打印函数执行时间
 import time
+
 
 # 1. 可变参数实现
 def decorator(func):
@@ -39,6 +41,7 @@ def f2(func_name1, func_name2):
     print('This is a function named ' + func_name1)
     print('This is a function named ' + func_name2)
 
+
 # 关键字参数 key word
 @decorator
 def f3(func_name1, func_name2, **kw):
@@ -46,6 +49,7 @@ def f3(func_name1, func_name2, **kw):
     print('This is a function named ' + func_name2)
     print(kw)
 
+
 f1('test func')
 f2('test func1', 'test func2')
-f3('test func1', 'test func2', a = 1, b = 2, c= '123')
+f3('test func1', 'test func2', a=1, b=2, c='123')
