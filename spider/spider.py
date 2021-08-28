@@ -108,7 +108,7 @@ class Spider():
         # 使用lambda，或者可以使用for-in循环
         l = lambda anchor: {
             'name': anchor['name'][0].strip(),
-            'number': anchor['number'[0]]
+            'number': anchor['number'][0]
         }
         return map(l, anchors)
 
