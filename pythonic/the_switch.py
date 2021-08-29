@@ -7,23 +7,38 @@
 # @Site    : nelsonblog.me
 
 '''
- 用字典代替switch
+ 用字典代替 switch
+
+ 函数式编程：key 对应的 value 是个函数，类似 C++ 的函数指针
+
+ switch (day)
+ {
+    case 0:
+        dayName = "Sunday";
+        break;
+    case 1:
+        dayName = "Monday";
+        break;
+    default:
+        dayName = "Unknown";
+        break;
+ }
 '''
 
-# day = 6
-# switcher = {
-#     0: 'Sunday',
-#     1: 'Monday',
-#     2: 'Tuesday'
-# }
-#
-# # Python变量使用下划线
-# # day_name = switcher[day]
-# day_name = switcher.get(day, 'Unknow')
-# print(day_name)
+day = 6
+switcher = {
+    0: 'Sunday',
+    1: 'Monday',
+    2: 'Tuesday'
+}
+
+# Python 变量使用下划线
+# day_name = switcher[day]
+day_name = switcher.get(day, 'Unknow')
+print(day_name)
 
 
-# 函数式编程，key对应的value是个函数
+# 函数式编程，key 对应的 value 是个函数
 
 def get_sunday():
     return 'Sunday'
