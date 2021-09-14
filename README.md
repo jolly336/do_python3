@@ -2,6 +2,7 @@
 
 > Python3 入门与进阶学习示例代码 This is a basic exercise sample project for learning Python3.
 
+
 ## Table of Contents
 
 * 一、Python基本类型 basic_type
