@@ -32,6 +32,12 @@ def myfun(i):
 
 
 def make_log_result(results):
+    """
+    使用 callback 来监听进程执行结果，可以做进度监听或者结果判断！
+    :param results:
+    :return:
+    """
+
     def log_result(retVal):
         results.append(retVal)
         print("result: {}, results: {}".format(retVal, results))
