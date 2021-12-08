@@ -21,7 +21,7 @@ import re
 """
 
 # 问题：判断 a 字符串是否包含 3个 Python？
-a = 'PythonPythonPythonPythonPython'
+a = 'PythonPythonPythonPythonPythonJS'
 
 # [abc] 中间字符是或的关系，() 是且的关系
 # r = re.findall('PythonPythonPython', a) # 最直接的想法是写三个 Python，emmm 也可以。要判断 100次呢？写一百次？？？
