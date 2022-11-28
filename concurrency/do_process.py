@@ -18,14 +18,15 @@
 
 import multiprocessing
 import time
+import os
 
-print("core cpu: " + str(multiprocessing.cpu_count()))
+# print("core cpu: " + str(multiprocessing.cpu_count()))
 
 a = 0
 
 
 def myfun(i):
-    time.sleep(1)
+    time.sleep(5)
     global a
     a = 1 + 1
     print("a: {}, i: {}".format(a, i))
@@ -69,7 +70,7 @@ def main():
     # close 和 join 之后获取结果
     # 参考：https://www.cnblogs.com/konglinqingfeng/p/9699947.html
     for future in futures:
-        print(future.get())  # 获取结果，如果有异常，会返回来异常
+        print(future.get(timeout=1))  # 获取结果，如果有异常，会返回来异常
 
     print("results: {}".format(results))
 
@@ -83,6 +84,41 @@ def main():
 
     # 使用 map
     # TODO: https://newbedev.com/multiprocessing-pool-when-to-use-apply-apply-async-or-map
+
+
+def dir_test(index, dir):
+    cur_dir = os.getcwd()
+    print("---> before: index: {}, cur_dir: {}".format(index, cur_dir))
+
+    repo_path = os.path.join(cur_dir, dir)
+    if not os.path.exists(repo_path):
+        os.mkdir(repo_path)
+
+    os.chdir(repo_path)
+
+    # do work...
+    # time.sleep(1)
+    time.sleep(index % 10)
+
+    # if index == 10:
+    #     raise IOError("io error...")
+
+    # cur_dir = os.getcwd()
+    os.chdir(cur_dir)
+    print("---> after: index: {}, cur_dir: {}".format(index, cur_dir))
+
+
+def main2():
+    pool = multiprocessing.Pool(3)
+    futures = []
+    for i in range(100):
+        result = pool.apply_async(func=dir_test, args=(i, "dir" + str(i),))
+        futures.append(result)
+    pool.close()
+    pool.join()
+
+    for future in futures:
+        print(future.get())  # 获取结果，如果有异常，会返回来异常
 
 
 if __name__ == '__main__':
